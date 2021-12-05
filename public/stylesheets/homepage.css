@@ -1,0 +1,30 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: #00B7FF;
+}
+
+h1 {
+    font-size: 40px;
+    border: solid 3px black;
+    border-radius: 5px;
+    padding: 14px 45px 14px 45px;
+}
+
+p {
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+a {
+    font-size: 20px;
+    padding: 14px 45px 14px 45px;
+    margin: 5px 5px 5px 5px
+}
