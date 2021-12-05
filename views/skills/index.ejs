@@ -7,12 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Todos</h1>
+    <h1>Stefan's Super Mega Dev Skills</h1>
     <ul>
       <% skills.forEach(function(s) { %>
         <li>
-          <%= s.skill %>
-            - 
+            <a href="/skills/<%= s.id %>"><%= s.skill %></a>
         </li>
       <% }); %>
     </ul>
