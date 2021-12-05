@@ -1,15 +1,21 @@
 const skills = [
-    { id: 1, skill: 'Make the best web applications ever.' },
-    { id: 2, skill: 'Make the coolest games ever.' },
-    { id: 3, skill: 'Hermit for 12 days straight.' },
-    { id: 4, skill: 'Hack into the Pentagon.' },
-    { id: 5, skill: 'Make above average money.' },
+    { id: 1, skill: 'Make the best web applications ever.', description: 'Honestly he is the greatest at that.' },
+    { id: 2, skill: 'Make the coolest games ever.', description: 'Honestly, really really cool games.' },
+    { id: 3, skill: 'Hermit for 12 days straight.', description: 'Who needs human interaction anyways?' },
+    { id: 4, skill: 'Hack into the Pentagon.', description: 'Would prefer to not go to jail, but willing to for the right price.' },
+    { id: 5, skill: 'Make above average money.', description: "Money can't buy happiness, but it sure helps" }
 ];
 
 module.exports = {
-    getAll
+    getAll,
+    getOne
 };
 
 function getAll() {
     return skills;
+}
+
+function getOne(id) {
+    id = parseInt(id);
+    return skills.find(skill => skill.id === id);
 }
