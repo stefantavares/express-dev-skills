@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <title>Stefan's skills</title>
-        <link rel='stylesheet' href='/stylesheets/styles.css' />
-      </head>
-<body>
+<%- include('../partials/header') %>
+
+    <div id="skill-container">
     <h2>Stefan can:</h2>
     <h3><%= skill.skill %></h3>
-    <p><%= skill.description %></p>
-    <a href="/skills">Back to skills</a>
-  </body>
-</html>
+    </div>
+
+<%- include('../partials/footer') %>
