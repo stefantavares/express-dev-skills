@@ -9,7 +9,8 @@ const skills = [
 module.exports = {
     getAll,
     getOne,
-    create
+    create,
+    deleteOne
 };
 
 function getAll() {
@@ -24,4 +25,9 @@ function getOne(id) {
 function create(skill) {
     skill.id = Math.floor(Math.random() * 1000);
     skills.push(skill);
+}
+
+function deleteOne(id) {
+    const skillIdx = skills.findIndex(skill => skill.id === parseInt(id));
+    skills.splice(skillIdx, 1);
 }
