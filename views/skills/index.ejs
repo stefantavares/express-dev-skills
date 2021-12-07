@@ -1,11 +1,13 @@
 <%- include('../partials/header') %>
 
-  <h1 id="skills-title">Stefan's Amazing Dev Skills</h1>
-  <table class="table table-hover ">
+  <!-- <h1 id="skills-title">Stefan's Amazing Dev Skills</h1> -->
+  <h2>Skills as of : <span id="date"><%= time %></span></h2>
+  <div id="table-container">
+  <table>
     <thead>
-      <tr>
-        <th>Skills as of: <%= time %></th>
-      </tr>
+      <!-- <tr>
+        <th>Skills as of : <%= time %></th>
+      </tr> -->
     </thead>
     <tbody>
       <% skills.forEach(function(s) { %>
@@ -13,12 +15,13 @@
           <td><a href="/skills/<%= s.id %>"><%= s.skill %></a></td>
           <td>
             <form action="/skills/<%= s.id %>?_method=DELETE" method="POST">
-              <button type="submit" class="btn btn-outline-danger">X</button>
+              <button type="submit" id="delete-button">X</button>
             </form>
           </td>
         </tr>
       <% }); %>
     </tbody>
   </table>
+</div>
 
 <%- include('../partials/footer') %>

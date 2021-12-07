@@ -1,19 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    font-family: 'Abel', sans-serif;
+}
+
 #skills-title {
     font-weight: 700;
 }
 
-th {
+#date {
+    font-size: 22px;
+    font-family: 'Rajdhani', sans-serif;
+    color: grey;
+}
+
+#table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border: white solid 1px;
+    border-radius: 6px;
+    padding: 12px;
+    color: white;
+}
+
+h2 {
     font-size: 25px;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
 }
 
 td {
-    background-color: lightgrey;
-    color: black;
+    background-color: black;
     font-size: 19px;
+    padding: 20px 14px 20px 14px;
 }
 
+#delete-button {
+    padding: 7px 9px 7px 9px;
+    border: 0.10em solid white;
+    border-radius: 5px;
+    margin: 0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+    background-color: black;
+    text-align: center;
+    transition: all 0.15s;
+}
+
+#delete-button:hover {
+    color: red;
+    border-color: red;
+}
+
+
 a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 

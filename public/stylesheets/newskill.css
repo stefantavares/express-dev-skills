@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap');
+
+#new-skill {
+    margin-bottom: 35px;
+}
+
+input {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    height: 30px;
+    width: 250px;
+    padding: 3px 14px 3px 14px;
+    margin-right: 20px;
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+}
+
+input::placeholder {
+    color: gray;
+    font-style: italic;
+}
+
+button {
+    padding: 11px 14px 10px 14px;
+    border: 0.10em solid white;
+    border-radius: 5px;
+    margin: 0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+    background-color: black;
+    text-align: center;
+    transition: all 0.15s;
+}
+
+button:hover {
+    color: green;
+    border-color: green;
+}
