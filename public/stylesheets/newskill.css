@@ -12,10 +12,11 @@ input {
     border-radius: 4px;
     height: 30px;
     width: 250px;
-    padding: 3px 14px 3px 14px;
+    padding: 2px 14px 5px 14px;
     margin-right: 20px;
     font-family: 'Abel', sans-serif;
     font-size: 18px;
+    word-wrap: break-word;
 }
 
 input::placeholder {
@@ -27,7 +28,7 @@ button {
     padding: 11px 14px 10px 14px;
     border: 0.10em solid white;
     border-radius: 5px;
-    margin: 0 0.3em 0.3em 0;
+    margin: auto;
     box-sizing: border-box;
     text-decoration: none;
     text-transform: uppercase;

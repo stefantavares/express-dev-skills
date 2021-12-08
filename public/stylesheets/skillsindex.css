@@ -28,9 +28,11 @@ body {
 }
 
 table {
+    table-layout: fixed;
+    width: 475px;
     border: white solid 1px;
     border-radius: 6px;
-    padding: 12px;
+    padding: 12px 12px 17px 12px;
     color: white;
 }
 
@@ -45,11 +47,16 @@ td {
     background-color: black;
     font-size: 19px;
     padding: 20px 14px 20px 14px;
+    word-wrap: break-word;
+}
+
+.skills {
+    width: 350px;
 }
 
 #delete-button {
     padding: 7px 9px 7px 9px;
-    border: 0.10em solid white;
+    border: 0.10em solid red;
     border-radius: 5px;
     margin: 0 0.3em 0.3em 0;
     box-sizing: border-box;
@@ -57,24 +64,18 @@ td {
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    color: white;
+    color: red;
     background-color: black;
     text-align: center;
     transition: all 0.15s;
 }
 
 #delete-button:hover {
-    color: red;
-    border-color: red;
+    color: white;
+    border-color: white;
 }
-
 
 a {
     color: white;
     text-decoration: none;
-}
-
-
-.nav-link {
-    color: blue;
 }

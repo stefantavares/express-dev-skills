@@ -9,7 +9,7 @@
     <tbody>
       <% skills.forEach(function(s) { %>
         <tr>
-          <td><a href="/skills/<%= s.id %>"><%= s.skill %></a></td>
+          <td class="skills"><a href="/skills/<%= s.id %>"><%= s.skill %></a></td>
           <td>
             <form action="/skills/<%= s.id %>?_method=DELETE" method="POST">
               <button type="submit" id="delete-button">X</button>
